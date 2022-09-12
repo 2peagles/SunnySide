@@ -1,0 +1,43 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+:root{
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Darkdesaturatedcyan: hsl(167, 40%, 24%);
+    --Darkblue: hsl(198, 62%, 26%);
+    --Darkmoderatecyan : hsl(168, 34%, 41%);
+    --Footer: rgb(131, 224, 207);
+    --Verydarkdesaturateblue: hsl(212, 27%, 19%);
+    --Verydarkgrayishblue: hsl(213, 9%, 39%);
+    --Darkgrayishblue: hsl(232, 10%, 55%);
+    --Grayishblue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+
+#footer{
+    min-height:30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--Footer);
+}
+#footer .nav-link{
+    color:var(--Darkmoderatecyan);
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
+    line-height: 5rem;
+}
+#footer .nav-link:hover{
+    color:var(--White);
+    transition: .8s;
+}
+.footernav{
+    padding-right:1.5rem;
+}
+.footerlogo{
+    padding-top:5rem;
+}
+.footerhover svg > path:hover{
+    fill:var(--White);
+    transition: .8s;
+}

@@ -1,0 +1,156 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+:root{
+    --Softred: hsl(7, 99%, 70%);
+    --Yellow: hsl(51, 100%, 49%);
+    --Darkdesaturatedcyan: hsl(167, 40%, 24%);
+    --Darkblue: hsl(198, 62%, 26%);
+    --Darkmoderatecyan : hsl(168, 34%, 41%);
+    --Verydarkdesaturateblue: hsl(212, 27%, 19%);
+    --Verydarkgrayishblue: hsl(213, 9%, 39%);
+    --Darkgrayishblue: hsl(232, 10%, 55%);
+    --Grayishblue: hsl(210, 4%, 67%);
+    --White: hsl(0, 0%, 100%);
+}
+/* font-family: 'Barlow', sans-serif; 600
+font-family: 'Fraunces', serif; 700 900*/
+
+.boxone,.boxfour, .boxfive, .boxsix{
+    height:75vh;
+    flex-direction: column;
+    padding:0;
+    padding:0 13%;
+    font-size: 18px;
+}
+.boxtwo, .boxthree{
+    padding:0;
+    height:75vh;
+    overflow: hidden;
+}
+.boxthree > img, .boxtwo > img{
+    width:100%;
+    object-fit: cover;
+    padding:0;
+
+}
+.boxone h2, .boxtwo h2, .boxthree h2, .boxfour h2, .boxfive h2, .boxsix h2{
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    color:var(--Verydarkdesaturateblue);
+}
+.boxone p, .boxtwo p, .boxthree p, .boxfour p, .boxfive p, .boxsix p{
+    font-family: 'Barlow', sans-serif; 
+    font-weight: 600;
+    color:var(--Darkgrayishblue);
+    line-height: 2rem;
+}
+.boxone , .boxfour{
+    display: flex;
+    align-items: left;  
+     text-align: left;
+    justify-content:center;
+    flex-direction: column;
+}
+.boxone h2 , .boxfour h2{
+  font-size: 42px;
+  text-align: left;
+  padding:0;
+  margin:0;
+}
+
+.boxone p , .boxfour p{
+    padding:2rem 0;
+  }
+  .boxone button , .boxfour button{
+    border:none;
+    color:var(--Verydarkdesaturateblue);
+    background-color: var(--White);
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 22px;
+    z-index: 1;
+    width:fit-content;
+    padding:0;
+}
+  .boxone button::before , .boxfour button::before{
+   content:'';
+   width: 140px;
+   height:10px;
+    z-index: -1;
+    text-align: center;
+    margin-top:20px;
+    margin-right:21px;
+   position: absolute;
+   border-radius: 10rem;
+   background-color: hsla(51, 100%, 49%,0.8);
+  }
+  .boxfour button::before{
+    background-color: hsla(7, 99%, 70%,0.8);
+  }
+  .boxone button:hover::before{
+    background-color:hsla(51, 100%, 49%,0.4);
+    transition: .7s;
+  }
+  .boxfour button:hover::before{
+    background-color:hsla(7, 99%, 70%,0.4);
+    transition: .7s;
+  }
+.boxone button:hover , .boxfour button:hover{
+    border:none !important;
+    color:var(--Verydarkdesaturateblue) !important;
+    background-color: var(--White) !important;
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: 22px;
+  }
+
+.boxfive , .boxsix{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding: 0 20rem 3rem 20rem;
+}
+.boxfive p , .boxsix p{
+    color:var(--Verydarkdesaturateblue);
+}
+.boxfive{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../Images/Desktop/imagegraphicdesign.jpg");
+}
+.boxsix{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../../Images/Desktop/imagephotography.jpg");
+}
+@media screen and (max-width:400px){
+    .boxone, .boxfour{
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 3.4rem 2.4rem;
+
+    }
+    .boxone h2, .boxfour h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .boxone{
+        padding:3.4rem 2rem;
+    }
+    .boxtwo, .boxthree{
+        height:fit-content;
+    }
+    .boxfive, .boxsix{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content:flex-end;
+        padding: 0 0 3rem 0;
+    }
+}

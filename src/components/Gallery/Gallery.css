@@ -1,0 +1,28 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+#gallery{
+    height: 60vh;
+    overflow: hidden;
+    padding:0;
+}
+#gallery .col ,#gallery .row{
+    padding:0;
+}
+.galleryone > img, .gallerytwo > img, .gallerythree > img,  .galleryfour > img{
+    width:100%;
+}
+.mobilegallery{
+    display: none;
+}
+
+@media screen and (max-width:400px){
+    #gallery{
+        height:fit-content; 
+    }
+    .desktopview{
+        display: none;
+    }
+    .mobilegallery{
+        display: block;
+    }
+}
