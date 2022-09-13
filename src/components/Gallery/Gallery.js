@@ -14,11 +14,12 @@ import imagegalleryorangem  from '../../Images/Mobile/imagegalleryorangem.jpg';
 const Gallery = () => {
   const[mobileGalleryView, setMobileGalleryView]=useState(false);
   const handleClick = ()=>setMobileGalleryView(!mobileGalleryView);
+  //makes the mobile image disappear
 
   return (
     <Container fluid id="gallery" className={!mobileGalleryView ? "desktopgallery" : "mobilegallery"}>
 {/* DESKTOP */}
-      <Row onClick={handleClick} className="desktopview">
+      <Row className="desktopview">
       <Col className="gallerytwo"><img src={imagegallerymilkbottles} alt="cone"/></Col>
       <Col className="galleryfour" ><img src={imagegalleryorange} alt="cone"/></Col>
       <Col className="galleryone"><img src={imagegallerycone} alt="cone"/></Col>

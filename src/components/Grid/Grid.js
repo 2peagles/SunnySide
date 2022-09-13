@@ -1,8 +1,8 @@
 import React from 'react';
 import './Grid.css';
 import {Container, Button, Row, Col} from 'react-bootstrap';
-import imagetransform from '../../Images/Desktop/imagetransform.jpg';
-import imagestandout from '../../Images/Desktop/imagestandout.jpg';
+// import imagetransform from '../../Images/Desktop/imagetransform.jpg';
+// import imagestandout from '../../Images/Desktop/imagestandout.jpg';
 // import imagesgraphicdesgin from '../../Images/Desktop/imagegraphicdesign.jpg';
 // import imagephotography from '../../Images/Desktop/imagephotography.jpg';
 
@@ -16,13 +16,11 @@ const Grid = () => {
                     Engage your clients through compelling visuals that do most of the marketing for you.</p>
                     <Button> Learn More </Button>
             </Col>
-            <Col xs={{order:'1'}} lg={{order:"2"}} className="boxtwo">
-                <img src={imagetransform} alt="egg"/>
-            </Col>
+            <Col xs={{order:'1'}} lg={{order:"2"}} className="boxtwo"></Col>
         </Row>
         <Row xs={12}>
             <Col  lg={6} className="boxthree">
-                <img src={imagestandout} alt="pink cup"/>
+                {/* <img src={imagestandout} alt="pink cup"/> */}
             </Col>
             <Col  lg={6} className="boxfour">
                 <h2>Stand out to the right audience</h2>

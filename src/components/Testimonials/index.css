@@ -21,12 +21,13 @@
     justify-content: center;
     flex-direction: column;
 }
-#testimonials h2 {
+#testimonials  h2 {
 /* color:var(--Darkgrayishblue); */
 color:var(--Grayishblue);
 font-family: 'Fraunces', serif; 
 font-weight: 700;
 letter-spacing: .5rem;
+padding-top:1rem;
 }
 .testimonialimage > img{
     width:100%;
@@ -66,10 +67,10 @@ letter-spacing: .5rem;
 @media screen and (max-width:400px) {
     #testimonials{
         padding:4rem 0;
-        overflow: hidden;
+        overflow-y: hidden;
     }
     #testimonials h2 {
-      font-size: 16px;
+      font-size: 14px;
       letter-spacing: .3rem;
         }
         .testimonials-card  {

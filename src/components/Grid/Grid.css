@@ -27,11 +27,18 @@ font-family: 'Fraunces', serif; 700 900*/
     height:75vh;
     overflow: hidden;
 }
-.boxthree > img, .boxtwo > img{
-    width:100%;
-    object-fit: cover;
-    padding:0;
 
+.boxtwo{
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("../../Images/Desktop/imagetransform.jpg");
+}
+.boxthree{
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-image: url("../../Images/Desktop/imagestandout.jpg");
 }
 .boxone h2, .boxtwo h2, .boxthree h2, .boxfour h2, .boxfive h2, .boxsix h2{
     font-family: 'Fraunces', serif;
@@ -153,4 +160,18 @@ font-family: 'Fraunces', serif; 700 900*/
         justify-content:flex-end;
         padding: 0 0 3rem 0;
     }
+}
+@media screen and (max-width:1780px) {
+   #grid{
+    height:auto;
+   }
+   .boxone, .boxfour, .boxfive, .boxsix{
+    height:50vh;
+    padding:0;
+    padding:0 10%;
+}
+.boxtwo, .boxthree{
+    padding:0;
+    height: 50vh;
+}
 }
