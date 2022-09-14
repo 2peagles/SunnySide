@@ -67,7 +67,7 @@ padding-top:1rem;
 @media screen and (max-width:400px) {
     #testimonials{
         padding:4rem 0;
-        overflow-y: hidden;
+        overflow: hidden;
     }
     #testimonials h2 {
       font-size: 14px;

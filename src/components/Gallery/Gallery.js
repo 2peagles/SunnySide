@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React  from 'react';
 import { Container, Col,Row } from 'react-bootstrap';
 import './Gallery.css';
 import imagegallerycone from '../../Images/Desktop/imagegallerycone.jpg';
@@ -6,37 +6,15 @@ import imagegallerymilkbottles from '../../Images/Desktop/imagegallerymilkbottle
 import imagegallerysugarcubes from '../../Images/Desktop/imagegallerysugarcubes.jpg';
 import imagegalleryorange  from '../../Images/Desktop/imagegalleryorange.jpg';
 
-import imagegalleryconem from '../../Images/Mobile/imagegalleryconem.jpg';
-import imagegallerymilkbottlesm from '../../Images/Mobile/imagegallerymilkbottlesm.jpg';
-import imagegallerysugarcubesm from '../../Images/Mobile/imagegallerysugarcubesm.jpg';
-import imagegalleryorangem  from '../../Images/Mobile/imagegalleryorangem.jpg';
-
 const Gallery = () => {
-  const[mobileGalleryView, setMobileGalleryView]=useState(false);
-  const handleClick = ()=>setMobileGalleryView(!mobileGalleryView);
-  //makes the mobile image disappear
-
   return (
-    <Container fluid id="gallery" className={!mobileGalleryView ? "desktopgallery" : "mobilegallery"}>
-{/* DESKTOP */}
+    <Container fluid id="gallery" >
       <Row className="desktopview">
-      <Col className="gallerytwo"><img src={imagegallerymilkbottles} alt="cone"/></Col>
-      <Col className="galleryfour" ><img src={imagegalleryorange} alt="cone"/></Col>
-      <Col className="galleryone"><img src={imagegallerycone} alt="cone"/></Col>
-      <Col className="gallerythree"><img src={imagegallerysugarcubes} alt="cone"/></Col>
+        <Col className="gallerytwo" lg={3} md={3} xs={6}><img src={imagegallerymilkbottles} alt="cone"/></Col>
+        <Col className="galleryfour" lg={3} md={3} xs={6}><img src={imagegalleryorange} alt="cone"/></Col>
+        <Col className="galleryone" lg={3} md={3} xs={6}><img src={imagegallerycone} alt="cone"/></Col>
+        <Col className="gallerythree" lg={3} md={3} xs={6}><img src={imagegallerysugarcubes} alt="cone"/></Col>
       </Row>
-
-{/* MOBILE */}
-        <Row onClick={handleClick} className="mobileview">
-          <Row>
-            <Col className="gallerytwo" ><img src={imagegallerymilkbottlesm} alt="cone"/></Col>
-            <Col className="galleryfour" ><img src={imagegalleryorangem} alt="cone"/></Col>
-          </Row>
-          <Row>
-            <Col className="galleryone" ><img src={imagegalleryconem} alt="cone"/></Col>
-            <Col className="gallerythree" ><img src={imagegallerysugarcubesm} alt="cone"/></Col>
-          </Row>
-        </Row>
 
     </Container>
   )
